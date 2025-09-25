@@ -18,5 +18,51 @@ const cart = [
 // Try: "regular", "student", "member", or "vip"
 const customerType = "member";
 
-getCategoryDiscount(category)
-return decimalrate (("Gear: ", 20 *0.3))
+function getCategroyDiscount(category){
+switch (category){
+  case "gear":
+    return .1
+    break
+    case "apparel":
+      return .15
+      break
+      case "snacks":
+        return .08
+        break
+        case "access":
+        return 0.05
+        break
+        case "default":
+        return 0
+    
+}
+}
+console.log (getCategroyDiscount("gear"))
+
+function priceAfterCategoryDiscount(product) {
+  let rate = getCategroyDiscount(product.category);
+  return product.price * (1-rate);
+  return
+
+
+}
+console.log (priceAfterCategoryDiscount(products[0]));
+
+function findProductID (id){
+  for (let p of products)
+  if (p.id === id)
+    return p;
+}
+   return null;
+
+   function lineitemtotal (name) {
+
+
+
+   }
+
+   
+    
+
+
+   
